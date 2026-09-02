@@ -4,7 +4,9 @@ int main() {
     int var;
     scanf("%d", &var);
 
-    printf("%d\n", var);
+    char ch = '*';
+
+    printf("%d %c\n", var, ch);
 
     return 0;
 }
