@@ -12,10 +12,10 @@ void algorithm()
 
 void Algo()
 {
-    int user_12;
+    double user_12;
     printf("Wanna track your investments? Let's get started!\n");
     printf("Enter 2 to Start, 1 to Exit: ");
-    scanf("%d", &user_12); // %d use kiya taake direct integer match ho
+    scanf("%lf", &user_12); // %lf use kiya taake direct double match ho
 
     if (user_12 == 2)
     {
@@ -28,37 +28,37 @@ void Algo()
     else
     {
         printf("Invalid input. Please enter 1 or 2.\n");
-        Algo();
+        algorithm(); // Dobara menu par le jane ke liye
     }
 }
 
 void InvestMent_Tracker()
 {
-    int Investment;
+    double Investment;
     printf("Enter the investment amount: ");
-    scanf("%d", &Investment);
+    scanf("%lf", &Investment);
 
-    int Years_For_Investment;
+    double Years_For_Investment;
     printf("Enter the number of years for investment: ");
-    scanf("%d", &Years_For_Investment);
+    scanf("%lf", &Years_For_Investment);
 
-    int Return_Rate;
+    double Return_Rate;
     printf("Enter the return rate (as a percentage, e.g., 100 for double): ");
-    scanf("%d", &Return_Rate);
+    scanf("%lf", &Return_Rate);
 
-    int Curent_Ammount = Investment;
-    int i = 1;
+    double Curent_Ammount = Investment;
+    double i = 1;
 
     while (i <= Years_For_Investment)
     {
         Curent_Ammount = Curent_Ammount * Return_Rate / 100 + Curent_Ammount;
-        printf("Year %d: %d\n", i, Curent_Ammount);
+        printf("Year %lf: %lf\n", i, Curent_Ammount);
         i++;
     }
 
-    int Quit_Not;
+    double Quit_Not;
     printf("Enter 1 to quit or 0 to continue: ");
-    scanf("%d", &Quit_Not);
+    scanf("%lf", &Quit_Not);
 
     if (Quit_Not == 1)
     {
@@ -74,10 +74,10 @@ void InvestMent_Tracker()
 int main()
 {
 
-    int user_choicing;
+    double user_choicing;
     printf("Welcome to the Investment Tracker!\n");
     printf("Enter 1 to Start or 0 to Exit: ");
-    scanf("%d", &user_choicing);
+    scanf("%lf", &user_choicing);
 
     if (user_choicing == 1)
     {
