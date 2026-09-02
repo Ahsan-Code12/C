@@ -4,6 +4,12 @@
 void InvestMent_Tracker();
 void Algo();
 
+void algorithm()
+{
+    printf("Welcome to the Investment Tracker!\n");
+    Algo();
+}
+
 void Algo()
 {
     int user_12;
@@ -67,6 +73,20 @@ void InvestMent_Tracker()
 
 int main()
 {
-    Algo();
+
+    int user_choicing;
+    printf("Welcome to the Investment Tracker!\n");
+    printf("Enter 1 to Start or 0 to Exit: ");
+    scanf("%d", &user_choicing);
+
+    if (user_choicing == 1)
+    {
+        algorithm();
+    }
+
+    else
+    {
+        printf("Exiting the program.\n");
+    }
     return 0;
 }
