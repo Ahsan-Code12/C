@@ -27,4 +27,15 @@ int main() {
         i++;
     }
 
+    int Quit_Not;
+    printf("Enter 1 to quit or 0 to continue: ");
+    scanf("%d", &Quit_Not);
+
+    if(Quit_Not == 1) {
+        printf("Exiting the program.\n");
+    } else {
+        printf("Continuing the program.\n");
+        main();
+    }
+
 }
