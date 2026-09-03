@@ -3,9 +3,9 @@
 int main(){
     int var = 2;
     
-    char ch = "*";
+    char ch = '*';
 
-    printf("%d %c", var, ch,);
+    printf("%d %c", var, ch);
 
     return 0;
 }
