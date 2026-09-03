@@ -1,12 +1,11 @@
 #include <stdio.h>
 
-int main() {
-    int var;
-    scanf("%d", &var);
-
+int main(){
+    int var = 2;
+    
     char ch = '*';
 
-    printf("%d %c\n", var, ch);
+    printf("%d %c", var, ch);
 
     return 0;
 }
