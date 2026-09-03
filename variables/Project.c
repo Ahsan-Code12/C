@@ -22,7 +22,7 @@ void Algo()
         InvestMent_Tracker();
     }
     else if (user_12 == 1)
-    {   
+    {
         printf("Exiting the program.\n");
     }
     else
