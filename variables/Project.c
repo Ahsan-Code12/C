@@ -34,6 +34,9 @@ void Algo()
 
 void InvestMent_Tracker()
 {
+    printf("|---------------------------------------------|\n");
+    printf("|          Investment Tracker Program         |\n");
+    printf("|---------------------------------------------|\n");
     double Investment;
     printf("Enter the investment amount: ");
     scanf("%lf", &Investment);
