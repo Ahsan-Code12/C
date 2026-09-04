@@ -2,15 +2,15 @@
 
 // Function prototypes taake compiler ko pehle se pata ho
 void InvestMent_Tracker();
-void Algo();
+void Start();
 
 void algorithm()
 {
     printf("Welcome to the Investment Tracker!\n");
-    Algo();
+    Start();
 }
 
-void Algo()
+void Start()
 {
     int user_12;
     printf("Wanna track your investments? Let's get started!\n");
@@ -70,7 +70,7 @@ void InvestMent_Tracker()
     else
     {
         printf("Continuing the program.\n");
-        Algo(); // Dobara menu par le jane ke liye
+        Start(); // Dobara menu par le jane ke liye
     }
 }
 
