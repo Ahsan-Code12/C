@@ -32,6 +32,13 @@ void Start()
     }
 }
 
+void list(double investment, int year, double return_rate)
+{
+    printf("Investment: %lf\n", investment);
+    printf("Years: %d\n", year);
+    printf("Return Rate: %lf\n", return_rate);
+}
+
 void InvestMent_Tracker()
 {
     printf("|---------------------------------------------|\n");
@@ -60,18 +67,30 @@ void InvestMent_Tracker()
         i++;
     }
 
-    int Quit_Not;
-    printf("Enter 1 to quit or 0 to continue: ");
-    scanf("%d", &Quit_Not);
+    int user_list_choice;
+    printf("Do you want to see the list of investments? Enter 1 for Yes or 0 for No: ");
+    scanf("%d", &user_list_choice);
 
-    if (Quit_Not == 1)
+    if (user_list_choice == 0)
     {
-        printf("Exiting the program.\n");
+        int Quit_Not;
+        printf("Enter 1 to quit or 0 to continue: ");
+        scanf("%d", &Quit_Not);
+
+        if (Quit_Not == 1)
+        {
+            printf("Exiting the program.\n");
+        }
+        else
+        {
+            printf("Continuing the program.\n");
+            Start(); // Dobara menu par le jane ke liye
+        }
     }
-    else
+
+    else if(user_list_choice == 1)
     {
-        printf("Continuing the program.\n");
-        Start(); // Dobara menu par le jane ke liye
+        list(Investment, Years_For_Investment, Return_Rate);
     }
 }
 
