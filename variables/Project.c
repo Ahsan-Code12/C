@@ -37,6 +37,7 @@ void list(double investment, int year, double return_rate)
     printf("Investment: %lf\n", investment);
     printf("Years: %d\n", year);
     printf("Return Rate: %lf\n", return_rate);
+    Start();
 }
 
 void InvestMent_Tracker()
