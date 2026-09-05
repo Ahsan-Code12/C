@@ -36,6 +36,7 @@ void InvestMent_Tracker()
 {
     printf("|---------------------------------------------|\n");
     printf("|          Investment Tracker Program         |\n");
+    printf("                By Ahsan Ali\n");
     printf("|---------------------------------------------|\n");
     double Investment;
     printf("Enter the investment amount: ");
