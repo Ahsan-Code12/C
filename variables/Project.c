@@ -19,8 +19,14 @@ void final_revenue(double invest, int year, double return_rate) {
         current_ = current_ * return_rate / 100 + current_;
         i++;
     }
-
-    printf("%lf\n", current_);
+    printf("|---------------------------------------------|\n");
+    printf("Final Revenue after %d years: %lf\n", year, current_);
+    printf("Initial Investment: %lf\n", invest);
+    printf("Return Rate: %lf\n", return_rate);
+    printf("Total Profit: %lf\n", current_ - invest);
+    printf("|---------------------------------------------|\n");
+    printf("           program by Ahsan Ali\n");
+    printf("|---------------------------------------------|\n");
 }
 
 void Start()
